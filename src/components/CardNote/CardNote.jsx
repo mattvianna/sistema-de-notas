@@ -4,12 +4,17 @@ import "./CardNote.css";
 class CardNote extends Component {
   render() {
     return (
-      <div className="card__note">
-        <header>
-          <h2>Título</h2>
-        </header>
-        <p>Alguma nota</p>
-      </div>
+      <>
+        <span className="category">{this.props.category}</span>
+        <div className="card">
+          <header className="card__title">
+            <h2>{this.props.title}</h2>
+          </header>
+          <article className="card__desc">
+            <p className="desc">{this.props.text}</p>
+          </article>
+        </div>
+      </>
     );
   }
 }

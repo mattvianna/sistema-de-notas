@@ -1,3 +1,26 @@
-.card__note {
-   border: 1px solid #000;
+.card {
+   height: 200px;
+   border: 1px solid #eaeaea;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+.card__title {
+   font-family: montserrat;
+   font-size: 18px;
+   color: #1c1c1c;
+   border-bottom: 1px solid #eaeaea;
+   padding: 0 0 5px;
+   margin: 0 0 10px;
+}
+.card__desc {
+   overflow-y: auto;
+   height: 85%;
+}
+.desc {
+   font-family: montserrat;
+   font-size: 14px;
+   color: #1c1c1c;
+   word-wrap: break-word;
+   margin: 0;
 }
